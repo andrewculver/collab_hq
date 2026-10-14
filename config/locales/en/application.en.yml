@@ -1,11 +1,11 @@
 en:
   application:
-    name: Untitled Application
+    name: Collab HQ
     owner: Unidentified Developer
     description: "You can update this description in `config/locales/en/application.en.yml`."
-    keywords: untitled application seo keywords
+    keywords: collab hq seo keywords
     support_email: change.me@localhost
-    key: untitled_application
+    key: collab_hq
   webhooks/outgoing/endpoints:
     fields:
       api_version:
