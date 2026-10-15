@@ -225,7 +225,7 @@ group :production do
   # gem "sentry-sidekiq"
 
   # Use S3 for Active Storage by default.
-  # gem "aws-sdk-s3", require: false
+  gem "aws-sdk-s3", require: false
 end
 
 # Use Ruby hashes as readonly datasources for ActiveRecord-like models.
