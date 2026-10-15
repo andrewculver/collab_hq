@@ -11,8 +11,15 @@ amazon:
   # If you update this, you also have to update `config/environments/production.rb`.
   access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] || ENV['BUCKETEER_AWS_ACCESS_KEY_ID'] %>
   secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] || ENV['BUCKETEER_AWS_SECRET_ACCESS_KEY'] %>
-  bucket: <%= ENV['AWS_S3_BUCKET'] || ENV['BUCKETEER_BUCKET_NAME'] %>
-  region: <%= ENV['AWS_S3_REGION'] || ENV['BUCKETEER_AWS_REGION'] %>
+  bucket: <%= ENV['AWS_S3_BUCKET'] || ENV['AWS_BUCKET'] || ENV['BUCKETEER_BUCKET_NAME'] %>
+  region: <%= ENV['AWS_S3_REGION'] || ENV['AWS_REGION'] || ENV['AWS_DEFAULT_REGION'] || ENV['BUCKETEER_AWS_REGION'] %>
+  <% if ENV['AWS_ENDPOINT_URL'].present? %>
+  # S3-compatible storage (e.g. Cloudflare R2 on Laravel Cloud).
+  endpoint: <%= ENV['AWS_ENDPOINT_URL'] %>
+  force_path_style: <%= ENV['AWS_USE_PATH_STYLE_ENDPOINT'] == 'true' %>
+  request_checksum_calculation: when_required
+  response_checksum_validation: when_required
+  <% end %>
 
 cloudinary:
   service: Cloudinary
