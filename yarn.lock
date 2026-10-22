@@ -309,6 +309,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-pro@npm:^7.3.1":
+  version: 7.3.1
+  resolution: "@fortawesome/fontawesome-pro@npm:7.3.1"
+  checksum: 10c0/7e9e699dc3005d947b7228e4e99b95b715eb385239ef02f965871c6caa6a34edd3c2979f468ec5e99978306ac35d75a61ff134f45c02a743ded85a6577e6d444
+  languageName: node
+  linkType: hard
+
 "@fullhuman/postcss-purgecss@npm:8.0.0":
   version: 8.0.0
   resolution: "@fullhuman/postcss-purgecss@npm:8.0.0"
@@ -986,6 +993,7 @@ __metadata:
     "@bullet-train/bullet-train-sortable": "npm:1.45.1"
     "@bullet-train/fields": "npm:1.45.1"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
+    "@fortawesome/fontawesome-pro": "npm:^7.3.1"
     "@fullhuman/postcss-purgecss": "npm:8.0.0"
     "@hotwired/stimulus": "npm:^3.2.2"
     "@hotwired/turbo-rails": "npm:^8.0.23"
